@@ -2,7 +2,7 @@ pub type Result<T> = core::result::Result<T, Error>;
 
 pub type Error = Box<dyn std::error::Error>;
 
-mod consts {
+pub mod consts {
     pub const MODEL: &str = "deepseek-r1:1.5b";
 
     pub const DEFAULT_SYSTEM_MOCK: &str = r#"
